@@ -13,3 +13,8 @@ export const createEnterpriseAction = (body) => ({
     type: actions.CREATE_ENTERPRISE,
     body: body,
 });
+
+export const getAllEnterpriseStatusAction = () => ({
+    type: actions.GET_ALL_ENTERPRISE_STATUS,
+
+});

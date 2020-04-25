@@ -8,6 +8,7 @@ import { apiUrl } from "./baseUrl";
 
 export const getAllEnterprisesApi = () => axios.get(apiUrl + "/enterprise");
 export const createEnterpriseApi = (body) => axios.post(apiUrl + "/enterprise", body);
+export const getAllEnterpriseStatusApi = () => axios.get(apiUrl + "/enterpriseStatus");
 
 
 /*export const getAllUsersApi = () => axios.get(apiUrl + "/secret/allUsers");

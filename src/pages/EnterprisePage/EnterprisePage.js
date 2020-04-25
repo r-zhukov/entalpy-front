@@ -30,7 +30,6 @@ class EnterprisePage extends React.Component {
     render() {
         const {open} = this.state;
         const {enterprises} = this.props;
-        console.log(enterprises);
         return (
             <Grid
                 container
@@ -73,6 +72,7 @@ class EnterprisePage extends React.Component {
 
 const mapStateToProps = (store) => ({
     enterprises: store.enterpriseReducer.enterprises,
+
 });
 
 const mapDispatchToProps = (dispatch) => ({

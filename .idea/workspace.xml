@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83aafdb2-bb55-4bf6-ab87-1b10c8f9213b" name="Default Changelist" comment="" />
+    <list default="true" id="83aafdb2-bb55-4bf6-ab87-1b10c8f9213b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/EnterpriseStatusSelect.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/components/EnterpriseStatusSelect/EnterpriseStatusSelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/enterpriseStatusReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sagas/enterpriseStatusSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/apiService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/apiService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/baseUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/baseUrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/CreateEnterpriseModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/CreateEnterpriseModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/EnterprisePage/EnterprisePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/EnterprisePage/EnterprisePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/actionsCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actionsCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/actionsTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actionsTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/code/enthalpy-back-end" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux/reducers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,15 +55,16 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\enthalpy plus, pe\entalpy-front\src\redux\reducers" />
+      <recent name="C:\enthalpy plus, pe\entalpy-front\src" />
       <recent name="C:\enthalpy plus, pe\entalpy-front\src\redux" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\enthalpy plus, pe\entalpy-front\src" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\enthalpy plus, pe\entalpy-front\src\redux" />
     </key>
   </component>
@@ -77,6 +96,11 @@
       <workItem from="1585487921906" duration="17530000" />
       <workItem from="1585752760800" duration="17890000" />
       <workItem from="1585807256301" duration="22416000" />
+      <workItem from="1585849645460" duration="138000" />
+      <workItem from="1585903531654" duration="1624000" />
+      <workItem from="1585978588371" duration="941000" />
+      <workItem from="1587730107136" duration="5182000" />
+      <workItem from="1587824366703" duration="10237000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1585849476487</created>
@@ -85,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585849476488</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1585849660711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585849660711</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,34 +131,51 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#ESLint/0.0.1858.1080@0.0.1858.1080" timestamp="1585760852994" />
-    <state x="554" y="136" key="CommitChangelistDialog2" timestamp="1585849473958">
+    <state x="554" y="136" key="CommitChangelistDialog2" timestamp="1585849656304">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="554" y="136" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1585849473958" />
+    <state x="554" y="136" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1585849656304" />
+    <state x="563" y="318" key="EditFileWatcherDialog" timestamp="1587832561169">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="563" y="318" key="EditFileWatcherDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1587832561169" />
     <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1585830768880">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="709" y="295" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1585830768880" />
-    <state width="1815" height="294" key="GridCell.Tab.0.bottom" timestamp="1585849489090">
+    <state x="798" y="433" key="Github.ShareDialog" timestamp="1585849695567">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585849489090" />
-    <state width="1815" height="294" key="GridCell.Tab.0.center" timestamp="1585849489090">
+    <state x="798" y="433" key="Github.ShareDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1585849695567" />
+    <state width="1815" height="327" key="GridCell.Tab.0.bottom" timestamp="1587832593593">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585849489090" />
-    <state width="1815" height="294" key="GridCell.Tab.0.left" timestamp="1585849489090">
+    <state width="1815" height="327" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593593" />
+    <state width="1815" height="327" key="GridCell.Tab.0.center" timestamp="1587832593593">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585849489090" />
-    <state width="1815" height="294" key="GridCell.Tab.0.right" timestamp="1585849489090">
+    <state width="1815" height="327" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593593" />
+    <state width="1815" height="327" key="GridCell.Tab.0.left" timestamp="1587832593592">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585849489090" />
-    <state x="487" y="142" key="SettingsEditor" timestamp="1585849439169">
+    <state width="1815" height="327" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593592" />
+    <state width="1815" height="327" key="GridCell.Tab.0.right" timestamp="1587832593593">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
+    <state width="1815" height="327" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593593" />
+    <state x="487" y="142" key="SettingsEditor" timestamp="1585978931867">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="487" y="142" key="SettingsEditor/0.0.1858.1080/1920.0.1366.728@0.0.1858.1080" timestamp="1585978931867" />
     <state x="487" y="142" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1585849439169" />
+    <state x="521" y="261" key="Vcs.Push.Dialog.v2" timestamp="1585849680316">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="261" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1585849680316" />
+    <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587839749704">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080@0.0.1858.1080" timestamp="1587839749704" />
     <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1585508532401">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

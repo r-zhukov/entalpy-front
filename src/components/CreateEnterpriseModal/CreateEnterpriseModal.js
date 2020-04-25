@@ -13,28 +13,41 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import {Grid} from "@material-ui/core";
-
-import {createEnterpriseAction} from "../../redux/actions/actionsCreators";
+import {createEnterpriseAction, getAllEnterpriseStatusAction} from "../../redux/actions/actionsCreators";
+import EnterpriseStatusSelect from "./components/EnterpriseStatusSelect/EnterpriseStatusSelect";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-
-
 class CreateEnterpriseModal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            user: {
+                role: "User",
+                enterprises: [],
+                contracts: [],
+                possibleWorks: [],
+                calls: [],
+                _id: "5ea2da0bba04ff12507cf85a",
+                email: "r.o.zhukov@ukr.net",
+                phone: "+380665597170",
+                firstName: "Роман",
+                lastName: "Жуков",
+                codeName: "notMarked",
+                created_at: "2020-04-24T12:22:35.859Z",
+                updatedAt: "2020-04-24T12:22:35.859Z",
+            },
             title: "",
             corporation: "",
             industry: "",
-            status: "",
-        }
+            enterpriseStatus: "",
+        };
         this.titleHandleChange = this.titleHandleChange.bind(this);
         this.corporationHandleChange = this.corporationHandleChange.bind(this);
         this.industrialHandleChange = this.industrialHandleChange.bind(this);
-        this.statusHandleChange = this.statusHandleChange.bind(this);
+        this.enterpriseStatusChange = this.enterpriseStatusChange.bind(this);
         this.createBodyEnterprise = this.createBodyEnterprise.bind(this);
     }
 
@@ -50,18 +63,18 @@ class CreateEnterpriseModal extends React.Component {
         this.setState({industry: event.target.value});
     };
 
-    statusHandleChange(event) {
-        this.setState({status: event.target.value});
+    enterpriseStatusChange(event) {
+        this.setState({enterpriseStatus: event.target.value});
     };
 
     createBodyEnterprise = () => {
-        const {title, corporation, industry, status} = this.state;
+        const {title, corporation, industry, enterpriseStatus} = this.state;
         const body = {
             "title": title,
             "corporation": corporation,
             "industry": industry,
-            "status": status,
-            "whoAdded": "5e74ff0f1b58d631a84c9b41"
+            "status": enterpriseStatus,
+            "whoAdded": this.state.user._id
         };
         this.props.createEnterprise(body);
         this.setState({title: "", status: "", corporation: "", industry: ""});
@@ -70,6 +83,7 @@ class CreateEnterpriseModal extends React.Component {
     };
 
     render() {
+
         let classes = {
             submit: {
                 margin: "0, 20, 0, 20",
@@ -86,9 +100,11 @@ class CreateEnterpriseModal extends React.Component {
                 marginTop: 5,
             },
         };
+        const {allEnterpriseStatus} = this.props;
+        const {title, corporation, industry, enterpriseStatus} = this.state;
+        const {titleHandleChange, corporationHandleChange, industrialHandleChange, enterpriseStatusChange, createBodyEnterprise} = this;
 
-        const {title, corporation, industry, status} = this.state;
-        const {titleHandleChange, corporationHandleChange, industrialHandleChange, statusHandleChange, createBodyEnterprise} = this;
+
         return (
             <div>
                 <Dialog
@@ -149,7 +165,8 @@ class CreateEnterpriseModal extends React.Component {
                                         <MenuItem value="HARVEAST">HARVEAST</MenuItem>
                                     </Select>
                                 </FormControl>
-                                <FormControl variant="outlined" className={classes.formControl} style={{margin: "10px"}}>
+                                <FormControl variant="outlined" className={classes.formControl}
+                                             style={{margin: "10px"}}>
                                     <InputLabel id="demo-simple-select-outlined-label">Отрасль
                                         промышленности</InputLabel>
                                     <Select
@@ -170,30 +187,13 @@ class CreateEnterpriseModal extends React.Component {
                                         <MenuItem value="Спиртовики">Спиртовики</MenuItem>
                                     </Select>
                                 </FormControl>
-                                <FormControl variant="outlined" className={classes.formControl} style={{margin: "10px"}}>
-                                    <InputLabel id="demo-simple-select-outlined-label">Статус</InputLabel>
-                                    <Select
-                                        labelId="demo-simple-select-outlined-label"
-                                        id="demo-simple-select-outlined"
-                                        value={status}
-                                        onChange={statusHandleChange}
-                                        label="Статус"
-                                        name="status"
-                                    >
-                                        <MenuItem value="">
-                                            <em>Не выбрано</em>
-                                        </MenuItem>
-                                        <MenuItem value="В работе">В работе</MenuItem>
-                                        <MenuItem value="Отказник">Отказник</MenuItem>
-                                        <MenuItem value="Ожидание тендера">Ожидание тендера</MenuItem>
-                                        <MenuItem value="Договор">Договор</MenuItem>
-                                        <MenuItem value="Дозвон">Дозвон</MenuItem>
-                                    </Select>
-                                </FormControl>
+                                <EnterpriseStatusSelect
+                                    enterpriseStatusChange={enterpriseStatusChange}
+                                    enterpriseStatus={enterpriseStatus}
+                                    allEnterpriseStatus={allEnterpriseStatus}
+                                />
                             </Grid>
                         </Grid>
-
-
                     </DialogContent>
                     <DialogActions>
                         <Grid container wrap="nowrap" style={{padding: "10px"}}>
@@ -205,7 +205,6 @@ class CreateEnterpriseModal extends React.Component {
                                 color="secondary"
                                 className={classes.submit}
                                 style={{padding: "10px"}}
-
                             >
                                 Отмена
                             </Button>
@@ -215,8 +214,6 @@ class CreateEnterpriseModal extends React.Component {
                                 type="submit"
                                 fullWidth
                                 variant="contained"
-
-
                             >
                                 Добавить
                             </Button>
@@ -227,10 +224,19 @@ class CreateEnterpriseModal extends React.Component {
             </div>
         );
     }
+
+    componentDidMount() {
+        this.props.getAllEnterpriseStatus();
+    }
 }
+
+const mapStateToProps = (store) => ({
+    allEnterpriseStatus: store.enterpriseStatusReducer.allEnterpriseStatus,
+});
 
 const mapDispatchToProps = (dispatch) => ({
     createEnterprise: (body) => dispatch(createEnterpriseAction(body)),
+    getAllEnterpriseStatus: () => dispatch(getAllEnterpriseStatusAction()),
 });
 
-export default connect(null, mapDispatchToProps)(CreateEnterpriseModal)
+export default connect(mapStateToProps, mapDispatchToProps)(CreateEnterpriseModal)
