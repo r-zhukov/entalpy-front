@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 const blue700 = blue[700];
 
-export default function Header() {
+export default function Header({userInfo, logout}) {
     const classes = useStyles();
 
     return (
@@ -51,10 +51,11 @@ export default function Header() {
                         align="left"
 
                     >
-                        Роман Жуков, рабочая книга
+                        {userInfo.firstName + " " + userInfo.lastName}, рабочая книга
                     </Typography>
                     <Button
                         color="inherit"
+                        onClick={logout}
                     >
                         Выйти
                     </Button>

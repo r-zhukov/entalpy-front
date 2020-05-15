@@ -1,0 +1,31 @@
+
+.dialogContent {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    justify-self: center;
+    padding: 20px;
+}
+
+.selectContainer {
+    display: flex;
+    margin: 5px 0;
+}
+
+.buttonModalContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.buttonModal {
+    width: 120px;
+}
+
+.customSelect {
+    padding: -10px 0px -10px -10px;
+}
+
+.searchButton {
+    margin-left: 10px;
+    border-radius: 100%;
+}

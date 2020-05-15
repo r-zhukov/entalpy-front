@@ -79,7 +79,7 @@ function EnterpriseList({enterprises}) {
                                 const fullName = firstName + " " + lastName;
                                 return (
                                     <TableRow hover role="checkbox" key={_id} className={classes.BodyRow}>
-                                        {TableBodyRowCreate(title, corporation, industry, status, fullName, updatedAt).map((cell, index) => {
+                                        {TableBodyRowCreate(title, corporation.title, industry.title, status.title, fullName, updatedAt).map((cell, index) => {
                                             return (<TableCell className={classes.bodyCell} key={index}>
                                                 {cell}
                                             </TableCell>);

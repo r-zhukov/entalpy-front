@@ -2,22 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83aafdb2-bb55-4bf6-ab87-1b10c8f9213b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/EnterpriseStatusSelect.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/components/EnterpriseStatusSelect/EnterpriseStatusSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/enterpriseStatusReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/sagas/enterpriseStatusSaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/CreateEnterpriseModal.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PrefetchRouter/PrefetchRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PrivateRouter/PrivateRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/corporationReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/industryReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sagas/corporationSaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sagas/industrySaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sagas/userSaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/apiService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/apiService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/baseUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/baseUrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/CreateEnterpriseModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/CreateEnterpriseModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/EnterpriseStatusSelect.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/components/EnterpriseStatusSelect/EnterpriseStatusSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateEnterpriseModal/components/CustomSelect/CustomSelect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EnterpriseList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EnterpriseList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/EnterprisePage/EnterprisePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/EnterprisePage/EnterprisePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/actionsCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actionsCreators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/actionsTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actionsTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/enterpriseReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/enterpriseReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sagas/enterpriseStatusSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/enterpriseStatusSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,7 +60,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux/reducers" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux/sagas" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,11 +76,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\enthalpy plus, pe\entalpy-front\src\redux\sagas" />
       <recent name="C:\enthalpy plus, pe\entalpy-front\src\redux\reducers" />
-      <recent name="C:\enthalpy plus, pe\entalpy-front\src" />
-      <recent name="C:\enthalpy plus, pe\entalpy-front\src\redux" />
+      <recent name="C:\enthalpy plus, pe\entalpy-front\public" />
+      <recent name="C:\enthalpy plus, pe\entalpy-front\src\components" />
+      <recent name="C:\enthalpy plus, pe\entalpy-front\src\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\enthalpy plus, pe\entalpy-front\src\pages" />
       <recent name="C:\enthalpy plus, pe\entalpy-front\src\redux" />
     </key>
   </component>
@@ -100,7 +119,17 @@
       <workItem from="1585903531654" duration="1624000" />
       <workItem from="1585978588371" duration="941000" />
       <workItem from="1587730107136" duration="5182000" />
-      <workItem from="1587824366703" duration="10237000" />
+      <workItem from="1587824366703" duration="10454000" />
+      <workItem from="1588065280938" duration="912000" />
+      <workItem from="1588066251839" duration="11142000" />
+      <workItem from="1589098702046" duration="5886000" />
+      <workItem from="1589296029610" duration="16714000" />
+      <workItem from="1589476075690" duration="1086000" />
+      <workItem from="1589477274403" duration="453000" />
+      <workItem from="1589477746565" duration="2345000" />
+      <workItem from="1589481196896" duration="296000" />
+      <workItem from="1589524834833" duration="12275000" />
+      <workItem from="1589550317447" duration="14466000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1585849476487</created>
@@ -116,11 +145,31 @@
       <option name="project" value="LOCAL" />
       <updated>1585849660711</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1587839770126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587839770127</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
@@ -131,10 +180,22 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#ESLint/0.0.1858.1080@0.0.1858.1080" timestamp="1585760852994" />
-    <state x="554" y="136" key="CommitChangelistDialog2" timestamp="1585849656304">
+    <state x="686" y="343" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588065979196">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="554" y="136" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1585849656304" />
+    <state x="686" y="343" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1588065979196" />
+    <state x="609" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589477114986">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="609" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1589477114986" />
+    <state x="554" y="136" key="CommitChangelistDialog2" timestamp="1587839767739">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="554" y="136" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1587839767739" />
+    <state x="92" y="92" width="1674" height="896" key="DiffContextDialog" timestamp="1589548429398">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="92" y="92" width="1674" height="896" key="DiffContextDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1589548429398" />
     <state x="563" y="318" key="EditFileWatcherDialog" timestamp="1587832561169">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -147,31 +208,35 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="798" y="433" key="Github.ShareDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1585849695567" />
-    <state width="1815" height="327" key="GridCell.Tab.0.bottom" timestamp="1587832593593">
+    <state width="907" height="327" key="GridCell.Tab.0.bottom" timestamp="1589478386407">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="327" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593593" />
-    <state width="1815" height="327" key="GridCell.Tab.0.center" timestamp="1587832593593">
+    <state width="907" height="327" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1589478386407" />
+    <state width="907" height="327" key="GridCell.Tab.0.center" timestamp="1589478386407">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="327" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593593" />
-    <state width="1815" height="327" key="GridCell.Tab.0.left" timestamp="1587832593592">
+    <state width="907" height="327" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1589478386407" />
+    <state width="907" height="327" key="GridCell.Tab.0.left" timestamp="1589478386407">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="327" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593592" />
-    <state width="1815" height="327" key="GridCell.Tab.0.right" timestamp="1587832593593">
+    <state width="907" height="327" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1589478386407" />
+    <state width="907" height="327" key="GridCell.Tab.0.right" timestamp="1589478386407">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="327" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1587832593593" />
+    <state width="907" height="327" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1589478386407" />
+    <state x="719" y="251" key="RollbackChangesDialog" timestamp="1589481483000">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="719" y="251" key="RollbackChangesDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1589481483000" />
     <state x="487" y="142" key="SettingsEditor" timestamp="1585978931867">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="487" y="142" key="SettingsEditor/0.0.1858.1080/1920.0.1366.728@0.0.1858.1080" timestamp="1585978931867" />
     <state x="487" y="142" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1585849439169" />
-    <state x="521" y="261" key="Vcs.Push.Dialog.v2" timestamp="1585849680316">
+    <state x="521" y="261" key="Vcs.Push.Dialog.v2" timestamp="1587839776138">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="521" y="261" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1585849680316" />
+    <state x="521" y="261" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1587839776138" />
     <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587839749704">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

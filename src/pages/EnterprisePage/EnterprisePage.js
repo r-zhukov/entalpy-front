@@ -6,29 +6,27 @@ import SearchInput from "../../components/SearchInput/SearchInput";
 import FilterPanel from "../../components/FilterPanel/FilterPanel";
 import CreateEnterpriseModal from "../../components/CreateEnterpriseModal/CreateEnterpriseModal";
 import CreateEnterpriseButton from "../../components/CreateEnterpriseButton/CreateEnterpriseButton";
-import {getAllEnterprisesAction} from "../../redux/actions/actionsCreators";
+import {getAllEnterprisesAction, isModalOpenAction} from "../../redux/actions/actionsCreators";
+import {Spin} from "antd";
 
 
 class EnterprisePage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            open: false,
-        };
+
         this.handleClickOpen = this.handleClickOpen.bind(this);
-        this.handleClose = this.handleClose.bind(this);
+        this.handleClose = this.handleClickOpen.bind(this);
     }
 
     handleClickOpen() {
-        this.setState({open: true});
+        this.props.modalSwitch();
     };
 
-    handleClose = () => {
-        this.setState({open: false});
+    handleClose() {
+        this.props.modalSwitch();
     };
 
     render() {
-        const {open} = this.state;
         const {enterprises} = this.props;
         return (
             <Grid
@@ -50,17 +48,16 @@ class EnterprisePage extends React.Component {
                 <Grid
                     container
                 >
-                    <EnterpriseList
-                        enterprises={enterprises}
-                    />
+                    <EnterpriseList enterprises={enterprises}/>
+
                 </Grid>
                 <CreateEnterpriseModal
-                    open={open}
                     handleClose={this.handleClose}
                 />
                 <CreateEnterpriseButton
                     onCreateEnterpriseButtonClick={this.handleClickOpen}
                 />
+
             </Grid>
         );
     }
@@ -72,11 +69,14 @@ class EnterprisePage extends React.Component {
 
 const mapStateToProps = (store) => ({
     enterprises: store.enterpriseReducer.enterprises,
+    isModalOpen: store.enterpriseReducer.isModalOpen,
+    user: store.userReducer.userInfo,
 
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    getAllEnterprise: () => dispatch(getAllEnterprisesAction())
+    getAllEnterprise: () => dispatch(getAllEnterprisesAction()),
+    modalSwitch: () => dispatch(isModalOpenAction())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(EnterprisePage);

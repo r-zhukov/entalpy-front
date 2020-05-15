@@ -1,12 +1,17 @@
-import { combineReducers } from "redux";
-import enterpriseReducer from "./enterpriseReducer";
+import {combineReducers} from "redux";
+
+
 import userReducer from "./userReducer";
+import industryReducer from "./industryReducer";
+import enterpriseReducer from "./enterpriseReducer";
+import corporationReducer from "./corporationReducer";
 import enterpriseStatusReducer from "./enterpriseStatusReducer";
 
-
 const appReducer = combineReducers({
-    enterpriseReducer, //in this place you should add each new reducer
     userReducer,
+    industryReducer,
+    enterpriseReducer,
+    corporationReducer,
     enterpriseStatusReducer,
 
 });
